@@ -1,0 +1,76 @@
+<!--首页职位列表-->
+<view class="container">
+  <swiper autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="aspectFit"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--list-->
+  <!--nav-->
+  <!--<nav class="com-flex-list com-border-bottom b-list-tab" style="visibility:hidden;">
+          <li class="active">
+            <strong>待审核</strong>
+          </li>
+          <li>
+            <strong>进行中</strong>
+          </li>
+          <li>
+            <strong>已结束</strong>
+          </li>
+      </nav>-->
+  <scroll-view scroll-y="true" style="height: 100%;" bindscrolltolower="lower" >
+        <view class="com-border-bottom">
+          <block wx:for="{{listdata}}">
+            <view class="com-border-bottom">
+              <!--FIXME jobId-->
+              <!-- <a href="../jobdetail/jobdetail.html?jobId=105720" class="com-flex com-border-bottom-dotted b-list-cont"> -->
+              <navigator url="../postdetail/post?id={{item.id}}" class="com-flex com-border-bottom-dotted b-list-cont">
+                <view class="com-middle b-list-imgbox">
+                  <block wx:if= "{{item.image}}">
+                    <image src="{{item.image}}" class="logo"></image>
+                  </block>
+                  <view wx:elif="!{{item.image}">
+                    <image src="{{item.image}}" class="logo"></image> 
+                  </view>
+                </view>
+                <view class="com-flex-item">
+                  <text class="b-list-tit">{{item.title}}</text>
+                  <text class="b-list-txt">
+                  	<i class="b-listicon-zone"></i>{{item.city}}
+                    	<i class="b-listicon-time " style="margin-left:10px;"></i>{{item.pub_at}}
+                  </text>
+                  <block class="b-list-txt">
+                    <text class="fc-40">{{item.salary_desc}}</text>
+                    <text class="fc-40 com-margin-l addLine">招聘{{item.need_number}}人</text>
+                  </block>
+                </view>
+                <view class="b-list-r">
+                  <text class="b-list-r-txt b-list-status5">审核拒绝</text>
+                </view>
+              </navigator>
+              <view class="com-flex b-list-dtltab">
+                <navigator url="../applymanagement?jobId={{item.id}}&isInterview={{item.is_interview}}&jobTitle={{item.title}}&ishot={{item.ishot}}" class="com-flex-item">
+                  <p class="com-border-right">
+                    <text>报名管理
+                      <block wx:if = "{{item.apply_number > 0}}">
+                        <i class="sign-dot"></i>
+                      </block>
+                    </text>
+                    <text>{{item.apply_number}}人待处理</text>
+                  </p>
+                </navigator>
+                <!-- <a href="../salarymanagement.html?jobId={{item.id}}" class="com-flex-item"> <em>工资结算</em> -->
+                <navigator url="../salarymanagement?jobId={{item.id}}" class="com-flex-item"> <text>工资结算</text>
+                  <text>{{item.hired_number}}人工作中</text>
+                </navigator>
+              </view>
+            </view>
+          </block>
+        </view>
+    </scroll-view>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+</view>
