@@ -37,9 +37,8 @@
                 </view>
                 <view class="com-flex-item">
                   <text class="b-list-tit">{{item.title}}</text>
-                  <text class="b-list-txt">
-                  	<i class="b-listicon-zone"></i>{{item.city}}
-                    <i class="b-listicon-time " style="margin-left:10px;"></i>{{item.pub_at}}
+                  <text class="b-list-txt" style="display:block;">
+                    {{item.city}}     {{item.pub_at}}
                   </text>
                   <text class="fc-40 b-list-txt">{{item.salary_desc}}</text>
                   <text class="fc-40 com-margin-l addLine b-list-txt">招聘{{item.need_number}}人</text>
@@ -56,12 +55,12 @@
                         <i class="sign-dot"></i>
                       </block>
                     </text>
-                    <text>{{item.apply_number}}人待处理</text>
+                    <text style="margin-top:10rpx;">{{item.apply_number}}人待处理</text>
                   </p>
                 </navigator>
                 <!-- <a href="../salarymanagement.html?jobId={{item.id}}" class="com-flex-item"> <em>工资结算</em> -->
                 <navigator url="../salarymanagement?jobId={{item.id}}" class="com-flex-item"> <text>工资结算</text>
-                  <text>{{item.hired_number}}人工作中</text>
+                  <text style="margin-top:10rpx;">{{item.hired_number}}人工作中</text>
                 </navigator>
               </view>
             </view>

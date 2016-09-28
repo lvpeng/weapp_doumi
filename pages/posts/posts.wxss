@@ -74,10 +74,11 @@ swiper-item image {
     overflow: hidden;
     text-overflow: ellipsis;
     font-weight: 500;
-    font-size: ;
+    font-size: 28rpx;
+    color: #404040;
 }
+
 .b-list-txt{
-  margin-top: 6px;
   font-size: 12rpx;
   color: #808080;
 }
@@ -102,9 +103,9 @@ swiper-item image {
 }
 .b-list-r-txt {
     position: absolute;
-    right: 0;
+    right: -90%;
     top: 50%;
-    margin-top: 15px;
+    margin-top: 10rpx;
     font-weight: 500;
     font-size: 17px;
     font-size: 0.17rem;
@@ -143,4 +144,8 @@ swiper-item image {
   width: 60rpx;
   height: 60rpx;
   display: inline;
+}
+.b-list-r{
+    position: relative;
+    min-width: 150rpx;
 }
