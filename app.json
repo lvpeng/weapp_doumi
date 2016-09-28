@@ -7,9 +7,9 @@
     "pages/salarymanagement/salarymanagement"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#ffa100",
-    "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "小程序",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "斗米商家",
     "backgroundColor": "#fff",
     "backgroundTextStyle": "dark",
     "enablePullDownRefresh": true

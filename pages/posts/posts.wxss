@@ -1,10 +1,25 @@
 /**posts.wxss**/
 swiper {
   flex:1;
+  padding: 0rpx;
 }
 
 swiper-item {
   flex: 1;
+}
+
+swiper-item image {
+  position: absolute;
+  top:-20rpx;
+  height: 100%;
+  width: 100%;
+}
+
+.com-border-bottom{
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 [class*="com-border-"] {
@@ -59,12 +74,11 @@ swiper-item {
     overflow: hidden;
     text-overflow: ellipsis;
     font-weight: 500;
-    font-size: 0.16rem;
+    font-size: ;
 }
 .b-list-txt{
   margin-top: 6px;
-  font-size: 12px;
-  font-size: 0.12rem;
+  font-size: 12rpx;
   color: #808080;
 }
 .b-listicon-zone {
@@ -128,4 +142,5 @@ swiper-item {
 .b-list-imgbox .logo{
   width: 60rpx;
   height: 60rpx;
+  display: inline;
 }

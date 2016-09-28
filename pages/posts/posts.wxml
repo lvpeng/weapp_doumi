@@ -20,7 +20,7 @@
             <strong>已结束</strong>
           </li>
       </nav>-->
-  <scroll-view scroll-y="true" style="height: 100%;" bindscrolltolower="lower" >
+  <scroll-view scroll-y="true" style="height: 100%;"  >
         <view class="com-border-bottom">
           <block wx:for="{{listdata}}">
             <view class="com-border-bottom">
@@ -39,12 +39,10 @@
                   <text class="b-list-tit">{{item.title}}</text>
                   <text class="b-list-txt">
                   	<i class="b-listicon-zone"></i>{{item.city}}
-                    	<i class="b-listicon-time " style="margin-left:10px;"></i>{{item.pub_at}}
+                    <i class="b-listicon-time " style="margin-left:10px;"></i>{{item.pub_at}}
                   </text>
-                  <block class="b-list-txt">
-                    <text class="fc-40">{{item.salary_desc}}</text>
-                    <text class="fc-40 com-margin-l addLine">招聘{{item.need_number}}人</text>
-                  </block>
+                  <text class="fc-40 b-list-txt">{{item.salary_desc}}</text>
+                  <text class="fc-40 com-margin-l addLine b-list-txt">招聘{{item.need_number}}人</text>
                 </view>
                 <view class="b-list-r">
                   <text class="b-list-r-txt b-list-status5">审核拒绝</text>
