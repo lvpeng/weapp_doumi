@@ -44,18 +44,30 @@ App({
   //     }
   //   }
   // }
-  fetchApi (url, callback) {
-    // return callback(null, top250)
-    wx.request({
-      url,
-      data: {},
-      header: { 'Content-Type': 'application/json' },
-      success (res) {
-        callback(null, res.data)
-      },
-      fail (e) {
-        callback(e)
-      }
-    })
+  fetchApi (url, method, postdata, callback) {
+    if(method == 'POST') {
+      wx.request({
+            url,
+            data: postdata,
+            header: { 'Content-Type': 'application/json' },
+            success (res) {
+              callback(null, res.data)
+            },
+            fail (e) {
+              callback(e)
+            }
+          })
+    }else if (method == 'GET') {
+      wx.request({
+            url,
+            header: { 'Content-Type': 'application/json' },
+            success (res) {
+              callback(null, res.data)
+            },
+            fail (e) {
+              callback(e)
+            }
+          })
+    }
   },
 })

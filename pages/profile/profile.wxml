@@ -1,6 +1,70 @@
-<!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for-items="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
-</view>
+  <view class="b-merchant-wrap ">
+      <!--merchant-->
+      <view class="com-flex com-border-bottom  b-merchant-box">
+        <view class="b-merchant-img" wx:if="{{data.company.image}}">
+            <image src="{{userInfo.company.image}}" width="45px" height="45px"></image>
+        </view>
+          <view class="b-merchant-img" wx:elif="!{{data.company.image}}">  
+            <image src="../../images/logo_app.png" width="45px" height="45px"></image>
+          </view>
+          <view class="b-company-name">
+            <text class="b-merchant-tit"> {{userInfo.company.corp_name}}</text>
+            <text class="b-merchant-txt">{{userInfo.userMobile}}</text>
+          </view>
+          <view class="right-icon">
+            <image src="../../images/arrowright.png" mode="aspectFit" class="board-img"/>
+          </view>  
+        </view>
+        <view class="wallet_wrap" style="border-bottom:2rpx solid #e6e6e6;">
+          <image class="wallet-icon" src="../../images/wallet.ico" mode="aspectFit" />
+          <text class="wallet-txt">钱包</text>
+          <text class="wallet-value">{{userInfo.wallet}}元</text>
+          <view class="right-icon">
+            <image src="../../images/arrowright.png" mode="aspectFit" class="board-img"/>
+          </view>  
+        </view>
+        <view class="phone_wrap">
+          <image class="wallet-icon" src="../../images/custom-service.ico" mode="aspectFit" />
+          <text class="wallet-txt">斗米客服</text>
+          <text class="wallet-value">{{userInfo.fwtel}}</text>
+          <view class="right-icon">
+            <image src="../../images/arrowright.png" mode="aspectFit" class="board-img"/>
+          </view>  
+        </view>
+    <view class="b-merchant-signOut">
+      <text>退出登录</text>
+    </view>
+    </view> 
+
+      <!--merchant end-->
+
+      <!--<view class="com-border-bottom  b-merchant-item wallet_wrap mb0" style="background:red;">
+        <view class="com-flex-item "> <i class="b-merchant-icon-wallet"></i>
+          <text>钱包</text>
+        </view>
+        <view class="com-arrbox com-align-middle">
+          <text class="b-merchat-money">{{userInfo.wallet}}元</text>
+        </view>
+      </view>-->
+      
+      <!--unit-->
+
+      <!--<view class="com-flex com-border-bottom  b-merchant-item makeCall" id="makeCall">
+        <view class="com-flex-item "> <i class="b-merchant-icon-about"></i>
+          <text>斗米客服</text>
+        </view>
+        <view class="com-arrbox">
+          <a class="b-merchat-tel">{{userInfo.fwtelcall}}</a>
+        </view>
+      </view>-->
+      <!--unit-->
+      <!--<view class="com-border-bottom b-merchant-signOut logout">
+       <text>退出登录</text>
+      </view>-->
+      <!--unit-->
+    <!--</view>-->
+	<loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+
+

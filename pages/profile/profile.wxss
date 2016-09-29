@@ -1,8 +1,112 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+view{
+    display: flex;
 }
-.log-item {
-  margin: 10rpx;
+.b-merchant-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.com-fix-fixed-bottom {
+    padding-bottom: 50px;
+}
+.b-merchant-box{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    align-items: center;
+    padding: 16rpx 24rpx;
+    margin-bottom:24rpx;
+    width:100%;
+    height: 144rpx;
+    background: #fff;
+}
+
+.b-merchant-img {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius:50%;
+    margin-right: 24rpx;
+    overflow: hidden;
+}
+.b-merchant-img image{
+    width: 100%;
+    height: 100%;
+}
+.b-company-name{
+    color: #404040;
+    font-weight: 700;
+    font-size: 32rpx;
+}
+.b-merchant-tit{
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 8rpx;
+    margin-top: 4rpx;
+}
+.b-merchant-txt{
+    font-size:28rpx;
+    color:#808080;
+    display: flex;
+    margin-top: 10rpx;
+}
+.right-icon{
+    position: absolute;
+    right: 20rpx;
+}
+.board-img{
+    width : 20px;
+    height : 20px;
+}
+
+.b-merchant-item {
+    padding: 10px 12px;
+    line-height: 1.5;
+    font-size: 14px;
+    font-size: 0.14rem;
+}
+
+.wallet_wrap , .phone_wrap{
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    line-height: 1.5;
+    padding: 20rpx 24rpx;
+    background-color: #fff;
+}
+.wallet-icon{
+    width : 20px;
+    height : 20px; 
+    margin-right:8px;  
+}
+.wallet-txt{
+    font-size:28rpx;
+    color: #404040;
+}
+.wallet-value{
+    color: #f60;
+    position : absolute;
+    right : 35px;
+    font-size: 28rpx;
+    vertical-align: -4px;
+}
+
+.b-merchant-signOut {
+    background-color: #fff;
+    height: 45px;
+    line-height: 45px;
+    font-size: 34rpx;
+    text-align: center;
+    color: #f60;
+    margin-top: 24rpx;
 }

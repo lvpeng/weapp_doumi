@@ -1,10 +1,7 @@
 {
   "pages":[
-    "pages/posts/posts",
     "pages/profile/profile",
-    "pages/postdetail/postdetail",
-    "pages/applymanagement/applymanagement",
-    "pages/salarymanagement/salarymanagement"
+    "pages/posts/posts"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -26,7 +23,7 @@
       "iconPath": "images/usbox.png",
       "selectedIconPath": "images/usbox-actived.png"
     }, {
-      "pagePath": "page/profile/profile",
+      "pagePath": "pages/profile/profile",
       "text": "我的",
       "iconPath": "images/profile.png",
       "selectedIconPath": "images/profile-actived.png"

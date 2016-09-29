@@ -18,7 +18,7 @@ Page({
   onLoad:function(options){
     var that = this;
     //get posts list data
-    app.fetchApi(API_URL, function(err,res){
+    app.fetchApi(API_URL, 'GET', {},function(err,res){
       //render template
       //更新数据
       that.setData({ listdata: res.data.list, hidden: true })

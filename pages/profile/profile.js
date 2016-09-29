@@ -1,13 +1,28 @@
-var util = require('../../utils/util.js')
+const app = getApp()
+const API_URL = "http://mob.vip-test.doumi.com/api/v1/bclient/merchCenter"
 Page({
   data: {
-    logs: []
+    userInfo: {},
+    hidden: false,//加载中
   },
   onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(function (log) {
-        return util.formatTime(new Date(log))
-      })
-    })
+    //FIXME use app.fetchApi
+    var that = this;
+    wx.request( {
+      url: API_URL,
+      data: {
+        uid: 100035//FIXME
+      },
+      method :"POST",
+      header: {
+        'Content-Type': 'application/json'
+      },
+      success: function( res ) {
+        that.setData({
+          userInfo: res.data.data,
+          hidden: true
+        })
+      }
+    })   
   }
 })
