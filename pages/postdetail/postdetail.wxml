@@ -5,7 +5,7 @@
 
   <view class="section_job">
     <view class="job_con">
-      <text class="job_tit">老师的分身乏术的</text>
+      <text class="job_tit">QQ浏览器测试工程师</text>
     </view>
     <view class="location-icon">
       <image style="width: 12px; height: 12px;margin-right:5px;" mode="aspectFit" src="../../images/location.png"></image>
@@ -13,17 +13,72 @@
     </view>
     <view class="time-icon">
       <image style="width: 12px; height: 12px;margin-right:5px;" mode="aspectFit" src="../../images/time.png"></image>
-      <text class="icon_tit">09-29</text>
+      <text class="icon_tit">08-29</text>
     </view>
   </view> 
 
   <view class="section_status">
     <view>
-      <text style="color:#404040;font-size:14px;">已结束</text>
+      <text style="color:#404040;font-size:14px;">进行中</text>
+    <view style="color:#808080;font-size:12px;margin-top:2px;"><text style="color:#ffa100;font-size:20px;">300</text>元/天</view>
     </view>
-    <view style="color:#808080;font-size:12px;margin-top:2px;"><text style="color:#ffa100;font-size:20px;">50</text>元/天</view>
   </view>
 </view>
 
 
-<view class=""></view>
+<view class="job_body">
+  <view class="job_company_name">
+    腾讯
+  </view>
+
+  <view class="job_desc">
+    <text class="job_desc_title">职位描述：</text>
+    <text class="job_desc_content">软件测试</text>
+  </view>
+  
+  <view class="job_desc">
+    <text class="job_desc_title">要求：</text>
+    <text class="job_desc_content">2人，男女不限</text>
+  </view>
+
+  <view class="job_desc">
+    <text class="job_desc_title">类型：</text>
+    <text class="job_desc_content">短期兼职</text>
+  </view>
+
+  <view class="job_desc">
+    <text class="job_desc_title">日期：</text>
+    <text class="job_desc_content">10.08 ~ 10.30</text>
+  </view>
+
+  <view class="job_desc">
+    <text class="job_desc_title">薪资：</text>
+    <text class="job_desc_content">每天结算</text>
+  </view>
+</view>
+
+<view class="job_address">
+  <view class="job_company_name">
+    工作地址
+  </view>
+  <view class="job_address_list">
+    <view class="job_address_item">
+      <text class="job_address_item">北京市中关村软件园</text>
+      <image style="width: 12px; height: 12px;margin-right:5px;" mode="aspectFit" src="../../images/location.png"></image>
+    </view>
+    <view class="job_address_item">
+      <text class="job_address_item">北京市上地六街17号</text>
+      <image style="width: 12px; height: 12px;margin-right:5px;" mode="aspectFit" src="../../images/location.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="job_instruction">
+  <view class="job_instruction_title">
+    岗位说明
+  </view>
+  <view class="job_instruction_wrap">
+    <text >工作要求：</text>
+    <text class="job_instruction_content">QQ浏览器高级测试待遇从优，管吃管住，速速报名！机不可失，失不再来</text>
+  </view>
+</view>
