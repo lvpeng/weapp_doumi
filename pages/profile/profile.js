@@ -4,6 +4,7 @@ Page({
   data: {
     userInfo: {},
     hidden: false,//加载中
+    modalHidden: true
   },
   onLoad: function () {
     //FIXME use app.fetchApi
@@ -24,5 +25,28 @@ Page({
         })
       }
     })   
+  },
+  showCallPhoneModel: function(){
+    var that = this ;
+    that.setData({modalHidden :false})
+  },
+  hideModal:function(){
+    var that = this;
+    that.setData({modalHidden : true})
+  },
+  callPhone: function(){
+    //TODO: call phone
+  },
+  go2companyInfo: function(){
+    wx.navigateTo({
+      url: '../companyInfo/companyInfo'  
+    })
+  },
+  go2Wallet: function(){
+    wx.navigateTo({
+      url: '../postdetail/postdetail'  
+    })
   }
 })
+
+

@@ -93,15 +93,17 @@ swiper-item image {
     background-position: -16px -16px;
 }
 .b-list-r {
-    display: inline-block;
-    position: relative;
-    min-width: 75px;
+   display: inline-block;
+   position: absolute;
+   right: 20px;
+   bottom: 50px;
+   font-size: 13px;
 }
 .b-list-status5 {
     color: #ff651f;
     white-space: nowrap;
 }
-.b-list-r-txt {
+/*.b-list-r-txt {
     position: absolute;
     right: -90%;
     top: 50%;
@@ -112,7 +114,7 @@ swiper-item image {
     white-space: nowrap;
     font-size: 12px;
     font-size: 0.12rem;
-}
+}*/
 .b-list-dtltab {
     text-align: center;
 }
@@ -144,8 +146,4 @@ swiper-item image {
   width: 60rpx;
   height: 60rpx;
   display: inline;
-}
-.b-list-r{
-    position: relative;
-    min-width: 150rpx;
 }

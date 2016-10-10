@@ -2,13 +2,13 @@
 body {
     font: 14px helvetica neue, helvetica, arial, hiragino sans gb, microsoft yahei, sans-serif;
 }
-page{
+/*page{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-}
+}*/
 image{
     display: block;
 }
@@ -64,4 +64,12 @@ text {
     display: block;
     display: table-cell\9;
     overflow: hidden;
+}
+.com-flex,
+.com-flex-list {
+    display: -webkit-box;
+    display: -ms-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }

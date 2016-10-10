@@ -1,1 +1,29 @@
-<view>this is job detail page</view>    
+<view class="job_header">
+  <view class="section_avatar">
+     <image style="width: 60px; height: 60px;" mode="aspectFit" src="../../images/logo_app.png"></image>
+  </view>
+
+  <view class="section_job">
+    <view class="job_con">
+      <text class="job_tit">老师的分身乏术的</text>
+    </view>
+    <view class="location-icon">
+      <image style="width: 12px; height: 12px;margin-right:5px;" mode="aspectFit" src="../../images/location.png"></image>
+      <text class="icon_tit">北京 海淀</text>
+    </view>
+    <view class="time-icon">
+      <image style="width: 12px; height: 12px;margin-right:5px;" mode="aspectFit" src="../../images/time.png"></image>
+      <text class="icon_tit">09-29</text>
+    </view>
+  </view> 
+
+  <view class="section_status">
+    <view>
+      <text style="color:#404040;font-size:14px;">已结束</text>
+    </view>
+    <view style="color:#808080;font-size:12px;margin-top:2px;"><text style="color:#ffa100;font-size:20px;">50</text>元/天</view>
+  </view>
+</view>
+
+
+<view class=""></view>

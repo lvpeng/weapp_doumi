@@ -15,7 +15,7 @@
             <image src="../../images/arrowright.png" mode="aspectFit" class="board-img"/>
           </view>  
         </view>
-        <view class="wallet_wrap" style="border-bottom:2rpx solid #e6e6e6;">
+        <view class="wallet_wrap" style="border-bottom:2rpx solid #e6e6e6;" bindtap="go2Wallet">
           <image class="wallet-icon" src="../../images/wallet.ico" mode="aspectFit" />
           <text class="wallet-txt">钱包</text>
           <text class="wallet-value">{{userInfo.wallet}}元</text>
@@ -23,7 +23,7 @@
             <image src="../../images/arrowright.png" mode="aspectFit" class="board-img"/>
           </view>  
         </view>
-        <view class="phone_wrap">
+        <view class="phone_wrap" bindtap="showCallPhoneModel">
           <image class="wallet-icon" src="../../images/custom-service.ico" mode="aspectFit" />
           <text class="wallet-txt">斗米客服</text>
           <text class="wallet-value">{{userInfo.fwtel}}</text>
@@ -34,8 +34,15 @@
     <view class="b-merchant-signOut">
       <text>退出登录</text>
     </view>
-    </view> 
 
+    </view> 
+    <loading hidden="{{hidden}}">
+    加载中...
+    </loading>
+    <modal title="" confirm-text="拨打" cancel-text="取消" hidden="{{modalHidden}}" bindconfirm="callPhone" bindcancel="hideModal">
+      是否拨打电话 
+      4007333300
+    </modal>
       <!--merchant end-->
 
       <!--<view class="com-border-bottom  b-merchant-item wallet_wrap mb0" style="background:red;">
@@ -63,8 +70,6 @@
       </view>-->
       <!--unit-->
     <!--</view>-->
-	<loading hidden="{{hidden}}">
-    加载中...
-  </loading>
+
 
 

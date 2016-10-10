@@ -1,0 +1,15 @@
+.f12{
+    font-size:24rpx; 
+}
+
+.f14{
+    font-size:28rpx; 
+}
+
+.f16{
+    font-size:32rpx; 
+}
+
+.f18{
+    font-size:36rpx; 
+}

@@ -2,7 +2,7 @@
 //获取应用实例
 const app = getApp()
 // const API_URL = "mob.vip-test.doumi.com/postlist"
-const API_URL = "http://mob.vip-test.doumi.com/api/v1/bclient/postlist?userId=100035&status=1&page=1"
+const API_URL = "http://mob.vip-test.doumi.com/api/v1/bclient/postlist?userId=100035&status=1&page=1";
 Page({
   data:{
     title: '加载中',

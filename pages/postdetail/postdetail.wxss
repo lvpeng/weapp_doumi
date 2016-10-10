@@ -1,0 +1,38 @@
+.job_header{
+    width:100%;
+    height: 84px;
+    padding:12px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    /*background: greenyellow;*/
+    box-sizing: border-box;
+}
+.section_avatar{
+    width: 60px;
+    height: 60px;   
+}
+.section_job{
+    width: 58%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-left: 10px;
+    /*background: gold;*/
+}
+.job_tit{
+    font-size: 16px; 
+}
+.icon_tit{
+    font-size: 12px;
+}
+.section_status{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-self: flex-end; 
+}
+

@@ -26,7 +26,7 @@
             <view class="com-border-bottom">
               <!--FIXME jobId-->
               <!-- <a href="../jobdetail/jobdetail.html?jobId=105720" class="com-flex com-border-bottom-dotted b-list-cont"> -->
-              <navigator url="../postdetail/post?id={{item.id}}" class="com-flex com-border-bottom-dotted b-list-cont">
+              <navigator url="../postdetail/postdetail?id={{item.id}}" class="com-flex com-border-bottom-dotted b-list-cont">
                 <view class="com-middle b-list-imgbox">
                   <block wx:if= "{{item.image}}">
                     <image src="{{item.image}}" class="logo"></image>
