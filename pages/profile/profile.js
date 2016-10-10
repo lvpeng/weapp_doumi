@@ -38,14 +38,14 @@ Page({
     //TODO: call phone
   },
   go2companyInfo: function(){
-    wx.navigateTo({
-      url: '../companyInfo/companyInfo'  
-    })
+    // wx.navigateTo({
+    //   url: '../companyInfo/companyInfo'  
+    // })
   },
   go2Wallet: function(){
-    wx.navigateTo({
-      url: '../postdetail/postdetail'  
-    })
+    // wx.navigateTo({
+    //   url: '../postdetail/postdetail'  
+    // })
   }
 })
 

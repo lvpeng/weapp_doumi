@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/postdetail/postdetail",
     "pages/posts/posts",
+    "pages/postdetail/postdetail",
     "pages/profile/profile"
   ],
   "window": {
